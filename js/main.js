@@ -1,10 +1,22 @@
 // change height images of slider when window resize
 $(document).ready(function () {
-    SliderImageResizer();
+    SliderImageHeightResizer();
+    SliderPrevNextButtonsLeftRightChanger()
     $(window).resize(function () { 
-        SliderImageResizer();
+        SliderImageHeightResizer();
+        SliderPrevNextButtonsLeftRightChanger();
     });
-    function SliderImageResizer () {
+    function SliderPrevNextButtonsLeftRightChanger(){
+        if (window.innerWidth < 600) {
+            $("#slider .carousel-control-prev").css("left", "0px")
+            $("#slider .carousel-control-next").css("right", "0px")
+        }
+        else{
+            $("#slider .carousel-control-prev").css("left", "50px")
+            $("#slider .carousel-control-next").css("right", "50px")
+        }
+    }
+    function SliderImageHeightResizer () {
         if (window.innerWidth < 992) {
             $("#slider img").height(400);
             $("#slider .owl-nav").css('transform', 'translateY(-50%)');
@@ -12,9 +24,6 @@ $(document).ready(function () {
         else if (window.innerWidth >= 992) {
             $("#slider img").height(800);
             $("#slider .owl-nav").css('transform', 'translateY(0%)');
-        }
-        else{
-
         }
     }
 });
