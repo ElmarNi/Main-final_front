@@ -1,0 +1,46 @@
+#chooseUs{
+    .body-row{
+        .choose-single{
+            .icon-side{
+                width: 60px;
+                height: 60px;
+                background: $mainColorGreen;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                i, span{
+                    color: white;
+                    font-size: 23px;
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            p{
+                font-size: 18px;
+                text-transform: capitalize;
+                margin: 0;
+                margin-left: 10px;
+            }
+            &:hover{
+                i, span{
+                    animation: iconUpDown 1s 1;
+                }
+            }
+        }
+        
+    }
+    @keyframes iconUpDown {
+        0% {
+            transform: translatey(0px)
+        }
+        50%{
+            transform: translatey(-5px)
+        }
+        100%{
+            transform: translatey(0px);
+        }
+    }
+}

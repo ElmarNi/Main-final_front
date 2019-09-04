@@ -1,0 +1,95 @@
+#vehicleTypes{
+    background-image: url("../img/cars_bg.jpg");
+
+   .body-row{
+       .vehicle-type-single{
+           background-color: white;
+           height: 100%;
+           position: relative;
+           z-index: 1;
+           overflow: hidden;
+           &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $mainColorGreen;
+                transform: scale(.8);
+                transition: all .5s ease;
+                opacity: 0;
+           }
+
+            .top{
+                position: relative;
+                z-index: 5;
+                h3{
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    transition: all .3s ease;
+                }
+                .price{
+                    text-transform: uppercase;
+                    background-color: $mainColorGreen;
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 5px 20px 5px 10px;
+                    border: none;
+                    transition: all 1s ease;
+                    position: relative;
+                    width: 130px;
+                    height: 60px;
+                    p, h4{
+                        margin: 0;
+                    }
+                    p, h4, span{
+                        color: white;
+                        position: relative;
+                        z-index: 2;
+                        transition: all .5s ease;
+                    }
+                    span{
+                        margin-left: -3px;
+                    }
+                    p{
+                        font-size: 12px;
+                        text-align: left
+                    }
+                    h4{
+                        display: inline;
+                        font-size: 24px;
+                        font-weight: bold;
+
+                    }
+                    &:hover{
+                        width: 100%;
+                    }
+                }   
+            }
+            .bottom{
+                img{
+                    transition: all .3s ease;
+                }
+            }
+            &:hover{
+                .price{
+                    background-color: #273f44;
+                }
+                h3{
+                    color: white;
+                }
+                &::before{
+                    transform: scale(1.2);
+                    opacity: 1;
+                }
+                .bottom{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+       }
+   }
+}

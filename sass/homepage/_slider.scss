@@ -1,0 +1,26 @@
+#slider{
+    position: relative;
+    a{
+        width: auto;
+        bottom: unset;
+        top: 50%;
+        transform: translateY(-50%);
+        span{
+            width: 70px;
+            height: 60px;
+            border-radius: 100%;
+            background-size: 59%;
+            background-position: center center;
+        }
+    }
+    .carousel-control-prev{
+        left: 50px;
+    }
+    .carousel-control-next{
+        right: 50px;
+    }
+    img{
+        height: 800px;
+        object-fit: cover;
+    }
+}

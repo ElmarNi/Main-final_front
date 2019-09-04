@@ -1,0 +1,52 @@
+// common title h2 for sections
+
+.black-logo-text{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+      text-decoration: none;
+  }
+  p{
+    font-size: 30px;
+    display: inline;
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  .rent{
+    color: $mainColorGreen;
+  }
+  .now{
+    color: black;
+  }
+}
+.section-title{
+    font-size: 30px;
+    color: #112E3B;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.heading-row{
+    text-align: center;
+} 
+
+p{
+    color: #526977;
+    font-size: 14px;
+}
+
+// common section padding
+section{
+    padding: 90px 0 50px;
+}
+
+// responsive section padding
+@media (max-width : 990px){
+    section{
+        padding: 70px 0 50px;
+    }
+}
