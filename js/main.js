@@ -62,9 +62,7 @@ $(document).ready(function () {
 
 //preloader
 $(document).ready(function(){
-    setTimeout(() => {
-        $("#preloader").hide();
-    }, 2000);
+    $("#preloader").hide();
 })
 
 //login page line span width changer
@@ -78,5 +76,15 @@ $(document).ready(function () {
     function LoginAndRegisterSpanLineWidthChanger(section, input){
         $(`#${section} .line`).css("width", "0%")
         $(input).next().css("width", "100%")
+    }
+});
+
+//sidebar menu a font size changer
+$(document).ready(function () {
+    if (window.innerHeight < 320) {
+        $("#small-screens ul li a").css("font-size", "12px")
+    }
+    else{
+        $("#small-screens ul li a").css("font-size", "14px")
     }
 });
