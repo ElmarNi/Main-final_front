@@ -141,6 +141,7 @@ section {
   width: 100%;
 }
 #small-screens #sidebar {
+  overflow-y: scroll;
   background: white;
   width: 200px;
   height: 100vh;
@@ -193,13 +194,19 @@ section {
   margin: 20px;
   position: absolute;
   top: 0px;
-  right: -60px;
+  transition: all .3s linear;
+  left: 0;
+}
+#small-screens #sidebar-btn.collapsed {
+  left: 200px;
+  transition: all .3s linear;
 }
 #small-screens #sidebar-btn span {
   height: 1px;
   background: #111;
   margin-bottom: 5px;
   display: block;
+  transition: all .3s linear;
 }
 #small-screens #sidebar-btn span:nth-child(2) {
   width: 75%;

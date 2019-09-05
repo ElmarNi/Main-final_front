@@ -31,8 +31,9 @@ $(document).ready(function () {
 //small screens sidebar menu
 $(document).ready(function () {
     $("#small-screens #sidebar-btn").click(function () { 
+        $("#small-screens #sidebar-btn").toggleClass("collapsed")
+        $(this).children().toggleClass("w-100")
         $("#small-screens #sidebar").toggleClass("visible");
-        $(this).children().toggleClass("w-100");
     })
 });
 
@@ -76,15 +77,5 @@ $(document).ready(function () {
     function LoginAndRegisterSpanLineWidthChanger(section, input){
         $(`#${section} .line`).css("width", "0%")
         $(input).next().css("width", "100%")
-    }
-});
-
-//sidebar menu a font size changer
-$(document).ready(function () {
-    if (window.innerHeight < 641) {
-        $("#small-screens ul li a").css("font-size", "9px")
-    }
-    else{
-        $("#small-screens ul li a").css("font-size", "14px")
     }
 });
