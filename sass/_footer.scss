@@ -14,25 +14,8 @@ footer{
         text-transform: capitalize;
         font-weight: 600;
     }
-    .news{
-        .single-news{
-            align-items: center;
-            .image{
-                width: 150px;
-                img{
-                    width: 100%;
-                }
-            }
-            .title{
-                p{
-                    margin: 0;
-                    font-weight: bold;
-                    font-size: 13px;
-                }
-            }
-        }
-    }
-    .news, .quick-links, .contact{
+
+    .quick-links, .contact{
         a{
             color: #dce4e6;
             text-decoration: none;

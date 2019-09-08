@@ -18,40 +18,8 @@
                 border: 1px solid #e9eff2;
                 border-radius: 0 0 3px 3px;
                 border-top-width: 0;
-                .date{
-                    width: 140px;
-                    text-align: center;
-                    height: 75px;
-                    margin-right: 15px;
-                    background-color: $mainColorGreen;
-                    border-radius: 3px;
-                    padding: 10px;
-                    span{
-                        font-size: 12px;
-                    }
-                    span, h4{
-                        color: white;
-                        margin: 0;
-                        font-weight: bold;
-                    }
-                }
-                .content{
-                    align-self: center;
-                    h5{
-                        font-weight: 600;
-                        margin: 0;
-                        a{
-                            color: #112E3B;
-                            transition: all .3s ease;
-                        }
-                        &:hover{
-                            a{
-                                text-decoration: none;
-                                color: $mainColorGreen;
-                            }
-                        }
-                    }
-                }
+
+
             }
         }
     }

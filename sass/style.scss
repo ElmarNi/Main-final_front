@@ -1,11 +1,13 @@
 @import "./lib/variable";
 @import "./lib/common";
 @import "./preloader";
-@import "./header.scss";
+@import "./header";
 @import "./mediaBreakpoints";
-@import "./homepage/slider.scss";
+@import "./homepage/slider";
 @import "./homepage/whyChooseUs";
 @import "./homepage/vehicleTypes";
 @import "./homepage/news";
+@import "./blog/news-list";
+@import "./single-blog/post";
 @import "./footer";
 @import "./loginAndRegisterpage/loginRegister"

@@ -1,4 +1,3 @@
-// common title h2 for sections
 
 .black-logo-text{
   display: block;
@@ -22,6 +21,7 @@
     color: black;
   }
 }
+// common title h2 for sections
 .section-title{
     font-size: 30px;
     color: #112E3B;
@@ -42,6 +42,100 @@ p{
 // common section padding
 section{
     padding: 90px 0 50px;
+}
+
+.news-datebox{
+  width: 140px;
+  text-align: center;
+  height: 75px;
+  margin-right: 15px;
+  background-color: $mainColorGreen;
+  border-radius: 3px;
+  padding: 10px;
+  span{
+      font-size: 12px;
+  }
+  span, h4{
+      color: white;
+      margin: 0;
+      font-weight: bold;
+  }
+}
+.recent-news{
+  .news{
+    .single-news{
+      align-items: center;
+      .image{
+        width: 150px;
+          img{
+            width: 100%;
+          }
+        }
+      .title{
+        p{
+          margin: 0;
+          font-weight: bold;
+          font-size: 13px;
+          }
+        }
+      }
+      a{
+        color: #dce4e6;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .3s ease;
+        &:hover{
+            color: $mainColorGreen;
+        }
+      }
+    }
+}
+.news-header{
+  align-self: center;
+  h5{
+      font-weight: 600;
+      margin: 0;
+      a{
+          color: #112E3B;
+          transition: all .3s ease;
+      }
+      &:hover{
+          a{
+              text-decoration: none;
+              color: $mainColorGreen;
+          }
+      }
+  }
+}
+
+#page-title{
+  background-size: cover;
+  height: 600px;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  h3{
+      color: white;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      z-index: 1;
+      font-size: 40px;
+      width: 100%;
+      text-align: center;
+  }
+  &::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(17, 46, 59, 0.3);
+      content: "";
+  }
 }
 
 // responsive section padding

@@ -1,25 +1,29 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
-    #news .body-row .single-news .title .date span{
+    .news-datebox span{
         font-size: 11px !important;
     }
-    #news .body-row .single-news .title .date h4{
+    .news-datebox h4{
         font-size: 1.3rem !important;
     }
-    #news .body-row .single-news .title .content h5 {
+    .news-header h5 {
         font-size: 1rem;
     }
-    footer .news a{
+    .recent-news .news a{
         font-size: 14px;
     }
-    footer .contact a, footer .quick-links a{
-        font-size: 12px;
+    footer .contact a, footer .quick-links a, .recent-news .news p{
+        font-size: 12px !important;
     }
     footer .contact i{
         font-size: 20px !important;
     }
-    footer .news .single-news .title p{
-        font-size: 11px;
+    #page-title h3{
+        top: 55% !important;
+        font-size: 30px !important;
+    }
+    #news-list .single-news .single-news-body p{
+        font-size: 12px;
     }
 }
 
