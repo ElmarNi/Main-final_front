@@ -28,6 +28,13 @@
     #cars .car-list .car-list-item .booking .price span{
         font-size: 22px;
     }
+    #slider .details ul li{
+        font-size: 12px;
+    }
+    #slider .details a{
+        font-size: 14px;
+    padding: 10px 20px;
+    }
 }
 
 @media (max-width: 992px){
@@ -48,6 +55,17 @@
             flex-wrap: unset;
             .price{
                 margin-right: 20px;
+            }
+        }
+    }
+    #slider .details{
+        left: 20%;
+        ul{
+            display: block;
+            li{
+                margin: 0;
+                margin-bottom: 10px;
+                text-align: left;
             }
         }
     }

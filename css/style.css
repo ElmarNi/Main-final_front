@@ -489,43 +489,50 @@ section {
      object-fit: cover;
 }
 
-#slider .car-details {
-  width: 120px;
+#slider .details {
   position: absolute;
-  left: 50%;
-  top: 70%;
+  bottom: 15%;
   z-index: 1;
-  height: 70px;
+  left: 10%;
+  padding: 20px 20px 30px;
+  background: #ffffffdb;
+  border-radius: 5px;
   text-align: center;
-  line-height: 70px;
+}
+
+#slider .details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#slider .details ul li {
+  margin-right: 15px;
+}
+
+#slider .details ul li i {
+  color: #00D231;
+  margin-right: 3px;
+}
+
+#slider .details a {
+  text-align: center;
   background-color: #00d231a6;
   color: white;
   border-radius: 13px;
   text-decoration: none;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  font-size: 20px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  font-size: 16px;
+  padding: 15px 30px;
 }
 
-#slider .car-details:hover {
+#slider .details a:hover {
   background-color: #00D231;
-}
-
-#slider .vip-icon {
-  position: absolute;
-  right: 2%;
-  top: 18%;
-  z-index: 1;
-  width: 60px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: #00D231;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  line-height: 40px;
 }
 
 #chooseUs .body-row .choose-single .icon-side {
@@ -1203,6 +1210,13 @@ footer .contact li {
   #cars .car-list .car-list-item .booking .price span {
     font-size: 22px;
   }
+  #slider .details ul li {
+    font-size: 12px;
+  }
+  #slider .details a {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1226,6 +1240,17 @@ footer .contact li {
   }
   #cars .car-list .car-list-item .booking .price {
     margin-right: 20px;
+  }
+  #slider .details {
+    left: 20%;
+  }
+  #slider .details ul {
+    display: block;
+  }
+  #slider .details ul li {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
