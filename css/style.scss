@@ -2,12 +2,14 @@
 @import "./lib/common";
 @import "./preloader";
 @import "./header";
-@import "./mediaBreakpoints";
 @import "./homepage/slider";
 @import "./homepage/whyChooseUs";
 @import "./homepage/vehicleTypes";
 @import "./homepage/news";
 @import "./blog/news-list";
 @import "./single-blog/post";
+@import "./car-list/cars";
 @import "./footer";
-@import "./loginAndRegisterpage/loginRegister"
+@import "./loginRegisterContact";
+@import "./terms/terms";
+@import "./mediaBreakpoints";

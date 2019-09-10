@@ -1,4 +1,4 @@
-#login, #register{
+#login, #register, #contact{
   background-image: url("../img/bg-01.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -29,7 +29,7 @@
       box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.4);
     }
   }
-  input{
+  input, textarea{
     color: #b340f6;
   }
   p{

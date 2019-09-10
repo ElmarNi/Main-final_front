@@ -9,9 +9,6 @@
     .news-header h5 {
         font-size: 1rem;
     }
-    .recent-news .news a{
-        font-size: 14px;
-    }
     footer .contact a, footer .quick-links a, .recent-news .news p{
         font-size: 12px !important;
     }
@@ -25,6 +22,36 @@
     #news-list .single-news .single-news-body p{
         font-size: 12px;
     }
+    .recent-news .news a ,#cars .car-list .car-list-item .car-details span, #cars .car-list .car-list-item .booking a{
+        font-size: 14px;
+    }
+    #cars .car-list .car-list-item .booking .price span{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px){
+    #cars .car-list .car-list-item{
+        display: block;
+        .image{
+            width: 100%;
+            margin-bottom: 20px;
+            img{
+                width: 100% ;
+            }
+        }
+        .car-details{
+            margin-bottom: 20px;
+        }
+        .booking{
+            width: 100%;
+            flex-wrap: unset;
+            .price{
+                margin-right: 20px;
+            }
+        }
+    }
+    
 }
 
 // Small devices (landscape phones, 576px and up)

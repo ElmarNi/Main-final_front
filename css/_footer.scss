@@ -33,6 +33,22 @@ footer{
             }
         }
     }
+    .recent-news{
+        h3{
+            font-size: 25px;
+        }
+        .news{
+            border: 0;
+            padding: 0;
+        }
+        a{
+            color: #dce4e6;
+            transition: all .3s ease;
+            &:hover{
+                color: $mainColorGreen;
+            }
+        }
+    }
     .contact{
         i{
             font-size: 30px;

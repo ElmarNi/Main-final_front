@@ -1,0 +1,92 @@
+#cars{
+    .car-list{
+        .car-list-item{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #e9eff2;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            padding: 30px;
+            transition: all .3s ease;
+            &:hover{
+                box-shadow: 0 10px 45px rgba(82, 105, 119, 0.15);
+            }
+            .image{
+                width: 20%;
+            }
+            .car-details{
+                a{
+                    text-decoration: none;
+                    transition: all .3s ease;
+                    font-size: 14px;
+                }
+                i{
+                    color: $mainColorGreen;
+                    margin-right: 5px;
+                }
+                span{
+                    margin-right: 15px;
+                }
+                h2{
+                    a{
+                        font-size: 25px;
+                        color: #112E3B;
+                        &:hover{
+                            color: $mainColorGreen;
+                        }
+                    }
+                }
+                .reviews a, .more a{
+                    color: #526977;
+                    &:hover{
+                        color: $mainColorGreen;
+                    }
+                }
+
+            }
+            .booking{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                width: 15%;
+                .price{
+                    align-self: flex-start;
+                    font-size: 15px;
+                    span{
+                        font-size: 28px;
+                        color: #112E3B;
+                        font-weight: bold;
+                    }
+                }
+                a{
+                    align-self: flex-end;
+                    box-shadow: 0 10px 45px rgba(82, 105, 119, 0.15);
+                    background-color: $mainColorGreen;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: bold;
+                    transition: all .3s ease;
+                    &:hover{
+                        background-color: #00b92b
+                    }
+                }
+            }
+        }
+    }
+    .load-more{
+        a{
+            border-color: #D9E3E9;
+            color: #526977;
+            padding: 12px 40px;
+            border-width: 2px;
+            font-size: 18px;
+            transition: all .3s ease;
+            font-weight: 500;
+            &:hover{
+                background-color: #D9E3E9;
+                border-color: #D9E3E9;
+                color: #112E3B;
+            }
+        }
+    }
+}

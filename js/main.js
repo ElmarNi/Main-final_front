@@ -42,10 +42,26 @@ $(document).ready(function () {
 
 //small screens sidebar menu
 $(document).ready(function () {
+    $(window).resize(function () { 
+        if (window.innerWidth > 992) {
+            $("body").css("overflow-y", "unset");
+            if ($("#small-screens #sidebar-btn").hasClass("collapsed")) {
+                $("#small-screens #sidebar-btn").removeClass("collapsed");
+                $("#small-screens #sidebar-btn").children().removeClass("w-100")
+                $("#small-screens #sidebar").removeClass("visible")
+            }
+        }
+    });
     $("#small-screens #sidebar-btn").click(function () {
         $("#small-screens #sidebar-btn").toggleClass("collapsed")
         $(this).children().toggleClass("w-100")
         $("#small-screens #sidebar").toggleClass("visible");
+        if ($(this).hasClass("collapsed")) {
+            $("body").css("overflow-y", "hidden")        
+        }
+        else{
+            $("body").css("overflow-y", "unset")  
+        }        
     })
 });
 
@@ -61,6 +77,7 @@ $(document).ready(function () {
                 "position": "fixed",
                 "width": "100%",
                 "top": "0",
+                "z-index": "9999999",
                 "background-color": "rgba(17, 46, 59, 0.9)"
             })
         }
@@ -78,7 +95,7 @@ $(document).ready(function () {
     $("#preloader").hide();
 })
 
-//login page line span width changer
+//login page & register page & contact page line span width changer
 $(document).ready(function () {
     $("#login .sign-in-input").focus(function () {
         LoginAndRegisterSpanLineWidthChanger("login", $(this));
@@ -86,17 +103,22 @@ $(document).ready(function () {
     $("#register .sign-in-input").focus(function () {
         LoginAndRegisterSpanLineWidthChanger("register", $(this));
     })
+    $("#contact .sign-in-input").focus(function () {
+        LoginAndRegisterSpanLineWidthChanger("contact", $(this));
+    })
     function LoginAndRegisterSpanLineWidthChanger(section, input) {
         $(`#${section} .line`).css("width", "0%")
         $(input).next().css("width", "100%")
     }
 });
 
+//single post gallery
 $(document).on("click", '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
 
+//single post gallery height resizer
 $(document).ready(function () {
     let maxHeight = 0;
     PostGalleryImagesHeightResizer(maxHeight);
