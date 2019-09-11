@@ -92,8 +92,10 @@ $(document).ready(function () {
 
 //preloader
 $(document).ready(function () {
+    console.log("dw");
+    
     $("#preloader").hide();
-})
+});
 
 //login page & register page & contact page line span width changer
 $(document).ready(function () {

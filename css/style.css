@@ -1181,6 +1181,67 @@ footer .contact li {
   text-transform: capitalize;
 }
 
+#vision .body-row .dot::after {
+  content: '';
+  display: block;
+  margin-top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #00D231;
+}
+
+#vision .body-row .content h5 {
+  color: #112E3B;
+  font-size: 18px;
+}
+
+#vision .body-row .content p {
+  margin: 0;
+}
+
+#passion {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#passion img {
+  width: 100%;
+  height: auto;
+}
+
+#passion .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 46, 59, 0.8);
+}
+
+#passion h5 {
+  font-size: 40px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#passion h5 span {
+  display: block;
+  font-size: 21px;
+  font-weight: 400;
+  color: #00D231;
+}
+
+#passion p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}
+
 @media (max-width: 575.98px) {
   .news-datebox span {
     font-size: 11px !important;

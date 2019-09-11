@@ -1,0 +1,24 @@
+#vision{
+    .body-row{
+        .dot{
+            &::after{
+                content: '';
+                display: block;
+                margin-top: 8px;
+                width: 8px;
+                height: 8px;
+                border-radius: 8px;
+                background-color: $mainColorGreen;
+            }
+        }
+        .content{
+            h5{
+                color: #112E3B;
+                font-size: 18px;
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
