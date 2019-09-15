@@ -58,18 +58,7 @@
                         font-weight: bold;
                     }
                 }
-                a{
-                    align-self: flex-end;
-                    box-shadow: 0 10px 45px rgba(82, 105, 119, 0.15);
-                    background-color: $mainColorGreen;
-                    color: white;
-                    font-size: 18px;
-                    font-weight: bold;
-                    transition: all .3s ease;
-                    &:hover{
-                        background-color: #00b92b
-                    }
-                }
+
             }
         }
     }

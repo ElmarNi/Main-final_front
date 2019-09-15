@@ -1,0 +1,118 @@
+#single-car-details{
+    .tabs{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        background-color: #232628;
+        border-left: 4px solid #232628;
+        border-right: 4px solid #232628;
+        list-style: none;
+        li{
+            a{
+                text-decoration: none;
+                display: block;
+                position: relative;
+                padding: 18px;
+                background-color: #232628;
+                border-radius: 0;
+                border: none;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 700;
+                transition: all .3s ease;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    top: -4px;
+                    left: 0;
+                    right: 0;
+                    height: 4px;
+                    background-color: $mainColorGreen;
+                    opacity: 0;
+                }
+            }
+
+        }
+        li.active{
+            a{
+                background-color: white;
+                color: #232628;
+                &::before{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .tab-contents{
+
+        .tab-content{
+            opacity: 0;
+            transition: all .3s ease;
+            display: none;
+            background-color: #F4F8F9;
+            padding: 20px;
+        }
+        .tab-content.active{
+            opacity: 1;
+            display: block;
+        }
+        table{
+            width: 100%;
+            tbody{
+                tr{
+                    td{
+                        padding: 9px 0 8px;
+                        color: #888;
+                        font-size: 13px;
+                        border-bottom: 1px solid #00d23121;
+                        text-transform: uppercase;
+                    }
+                    td:nth-child(2){
+                        color: #232628;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .review, .write-review{
+            padding: 30px;
+            background-color: white;
+            border-radius: 3px;
+            margin-bottom: 30px;
+        }
+        .review{
+
+            .left-side{
+                h5{
+                    margin: 0;
+                    font-size: 18px;
+                }
+                p{
+                    color: #7590a0;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
+            .content{
+                p{
+                    margin: 0;
+                }
+            }
+        }
+        .write-review{
+            h5{
+                font-size: 21px;
+                margin-bottom: 30px;
+            }
+            input, textarea{
+                &:focus{
+                    outline: transparent;
+                    border-color: $mainColorGreen;
+                    box-shadow: 0 0 0 0rem;
+                }
+            }
+        }
+    }
+}

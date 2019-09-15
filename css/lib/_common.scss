@@ -209,6 +209,69 @@ section{
   }
 }
 
+//single blog and car details gallery
+.detail-gallery{
+  img{
+    width: 100% !important;
+  }
+  display: flex;
+  flex-wrap: wrap;
+  a{
+      position: relative;
+      padding: 5px;
+      &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 100%;
+          background-color: #0000005e;
+          opacity: 0;
+          transition: all .3s ease;
+          transform: scale(0.8);
+      }
+      &:hover{
+          &::before{
+              opacity: 1;
+              transform: scale(1);
+          }
+      }
+      i{
+          position: absolute;
+          z-index: 2;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 30px;
+          color: white;
+          opacity: 0;
+          transition: all .3s ease;
+      }
+      &:hover{
+          i{
+              opacity: 1;
+          }
+      }
+  }
+}
+
+//btn for car list(book now) and write review form submit
+.custom-bg-green-btn{
+  align-self: flex-end;
+  box-shadow: 0 10px 45px rgba(82, 105, 119, 0.15);
+  background-color: $mainColorGreen;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all .3s ease;
+  &:hover{
+      background-color: #00b92b;
+      color: white;
+  }
+}
+
 // responsive section padding
 @media (max-width : 990px){
     section{

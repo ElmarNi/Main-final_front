@@ -92,8 +92,6 @@ $(document).ready(function () {
 
 //preloader
 $(document).ready(function () {
-    console.log("dw");
-    
     $("#preloader").hide();
 });
 
@@ -114,30 +112,46 @@ $(document).ready(function () {
     }
 });
 
-//single post gallery
+//detail gallery
 $(document).on("click", '[data-toggle="lightbox"]', function (event) {
     event.preventDefault();
     $(this).ekkoLightbox();
 });
 
-//single post gallery height resizer
+//car details tab changer and gallery img height resizer
 $(document).ready(function () {
-    let maxHeight = 0;
-    PostGalleryImagesHeightResizer(maxHeight);
+    $("#single-car-details .tabs a").click(function(e){
+        e.preventDefault();
+        let dataId = $(this).parent().attr("data-id");
+        $("#single-car-details .tabs li.active").removeClass("active");
+        $(this).parent().addClass("active");
+        $(`#single-car-details .tab-contents .tab-content.active`).removeClass("active")
+        $(`#single-car-details .tab-contents .tab-content[data-id="${dataId}"]`).addClass("active");
+        if (dataId == 3) {
+            $(".detail-gallery img").each(function(){
+                $(this).css("height","auto")
+            })
+            PostGalleryImagesHeightResizer(0, "single-car-details");
+        }
+    })
+
+    //single post gallery and car details gallery height resizer
+    PostGalleryImagesHeightResizer(0, "post");
+    PostGalleryImagesHeightResizer(0, "single-car-details");
     $(window).resize(function () { 
-        maxHeight = 0
-        $("#post .post-gallery img").each(function(){
-            $(this).css("height","auto" )
+        $(".detail-gallery img").each(function(){
+            $(this).css("height","auto")
         })
-        PostGalleryImagesHeightResizer(maxHeight);
+        PostGalleryImagesHeightResizer(0, "post");
+        PostGalleryImagesHeightResizer(0, "single-car-details");
     });
-    function PostGalleryImagesHeightResizer(height){
-        $("#post .post-gallery img").each(function () {
+    function PostGalleryImagesHeightResizer(height, sectionId){
+        $(`#${sectionId} .detail-gallery img`).each(function () {
             if ($(this).height() > height) {
                 height = $(this).height()
             }
         });
-        $("#post .post-gallery img").each(function () {
+        $(`#${sectionId} .detail-gallery img`).each(function () {
             $(this).height(height)
         });
     }

@@ -1,0 +1,26 @@
+#reservation{
+    background-color: #F4F8F9;
+    form, .car-details{
+        background-color: white;
+    }
+    form{
+        padding: 25px 20px;
+        label{
+            font-size: 14px;
+            span{
+                color: red;
+            }
+        }
+        button{
+            color: inherit;
+            float: right;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1;
+            text-shadow: 0 1px 0 #fff;
+            background-color: transparent;
+            border: 0;
+            opacity: .5;
+        }
+    }
+}

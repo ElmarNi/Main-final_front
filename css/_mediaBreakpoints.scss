@@ -1,23 +1,23 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
     .news-datebox span{
-        font-size: 11px !important;
+        font-size: 11px;
     }
     .news-datebox h4{
-        font-size: 1.3rem !important;
+        font-size: 1.3rem;
     }
     .news-header h5 {
         font-size: 1rem;
     }
     footer .contact a, footer .quick-links a, .recent-news .news p{
-        font-size: 12px !important;
+        font-size: 12px;
     }
     footer .contact i{
-        font-size: 20px !important;
+        font-size: 20px;
     }
     #page-title h3{
-        top: 55% !important;
-        font-size: 30px !important;
+        top: 55%;
+        font-size: 30px;
     }
     #news-list .single-news .single-news-body p{
         font-size: 12px;
@@ -69,7 +69,9 @@
             }
         }
     }
-    
+    #single-car-details .tabs{
+        display: block;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
